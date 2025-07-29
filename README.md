@@ -5,10 +5,15 @@ CTRL+GRC is a real-time Cybersecurity Governance, Risk, and Compliance (GRC) ass
 Features:
 
 ⏱️ Real-time monitoring of Google Form responses
+
 📊 Domain-wise security scoring (Policies, Risk Management, Compliance, etc.)
+
 📄 PDF report generation using Jinja2 + HTML + `wkhtmltopdf`
+
 📧 Auto-emailing personalized reports to form submitters
+
 🌐 Flask-based web app hosted on Render
+
 🔐 Secure config via environment variables and service account management
 
 
