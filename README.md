@@ -20,22 +20,32 @@ Features:
 Project Structure:
 
 grc_scoring.py  (scoring, PDF generation, email generation)
+
 scoring_config.json (Scoring rules per question/domain)
+
 report_template.html (HTML report template for Jinja2)
+
 requirements.txt (Python dependencies)
+
 service_account.json ( see the steps below to obtain this)
+
 README.md 
 
 Prerequisites:
 
 Google Form connected to a Google Sheet
+
 Service account with Sheets API access
+
 Google Sheet share access to the service account email
+
 Gmail App Password (for sending email)
+
 scoring_config.json aligned with your Form questions
+
 Render.com account for hosting (or local setup)
 
-Local Installation:
+**Local Installation:**
 
 1.Clone the repo:
 
