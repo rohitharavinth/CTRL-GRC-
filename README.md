@@ -173,6 +173,6 @@ Recommendations with priority (Critical, High, Medium, Low)
 
 
 Built with ❤️ and passion for cybersecurity 
-by @rohitharavinth
+by @rohitharavinth and @Samithajude
 
 
