@@ -1,8 +1,8 @@
-CTRL+GRC – Cybersecurity GRC Scoring and Reporting Tool
+**CTRL+GRC – Cybersecurity GRC Scoring and Reporting Tool
 
 CTRL+GRC is a real-time Cybersecurity Governance, Risk, and Compliance (GRC) assessment system powered by Google Forms + Sheets, Python scoring logic, automated PDF report generation, and email delivery. Built to help startup and msmse organizations quickly evaluate their security posture.
 
-Features:
+Features:**
 
 ⏱️ Real-time monitoring of Google Form responses
 
@@ -17,7 +17,7 @@ Features:
 🔐 Secure config via environment variables and service account management
 
 
-Project Structure:
+**Project Structure:**
 
 grc_scoring.py  (scoring, PDF generation, email generation)
 
@@ -31,7 +31,7 @@ service_account.json ( see the steps below to obtain this)
 
 README.md 
 
-Prerequisites:
+**Prerequisites:**
 
 Google Form connected to a Google Sheet
 
@@ -52,52 +52,71 @@ Render.com account for hosting (or local setup)
 git clone https://github.com/rohitharavinth/CTRL-GRC.git
 cd CTRL-GRC
 
+
 2.Install dependencies:
 
 pip install -r requirements.txt
+
 
 3.Install wkhtmltopdf:
 
 Ubuntu/Debian: sudo apt install wkhtmltopdf
 Windows: Download from https://wkhtmltopdf.org/downloads.html and Add to your system PATH.
 
+
 4.service_account.json creation 
 
 Step 1: Go to Google Cloud Console > Sign in with your Gmail account. > Create a new Google Cloud Project (or use an existing one).
 
+
 Step 2: Enable Google Sheets API > In the left sidebar, go to APIs & Services → Library. > Search for Google Sheets API. > Click Enable.
+
 
 Step 3: Create a Service Account > Go to IAM & Admin → Service Accounts. > Click “Create Service Account”.
 
+
 Name: ctrl-grc-sheets-access (or anything) > Description: For accessing Google Sheets from Python
+
 
 Click Create and Continue.
 
+
 Step 4: Grant Permissions > In the "Grant this service account access to project" screen:
 
+
 Role: Choose Editor (you can later restrict this further to just "Viewer").
+
 
 Click Done.
 
 Step 5: Generate Service Account JSON Key > Go back to IAM & Admin → Service Accounts.
 
+
 Click on the service account you just created. > Go to the "Keys" tab. > Click "Add Key" → "Create new key". > Select JSON format. > Click Create.
+
 
 A .json file will download automatically — this is your service_account.json file.
 
+
 Step 6: Share Your Google Sheet with the Service Account
+
 
 Open your linked Google Sheet and Click “Share”. > Add the service account email (it looks like: your-service-name@your-project-id.iam.gserviceaccount.com).
 
+
 Give it Viewer access (or Editor if needed).
+
 
 Save.
 
-step 7 Final Tips: 
+
+Step 7 Final Tips: 
 
 Rename the downloaded file to service_account.json.
 
+
 In your Python project, place it in a safe path or secure folder.
+
 
 For Render.com:(optional)
 
@@ -105,7 +124,7 @@ Go to Secrets → upload it.
 
 Mount it to /etc/secrets/service_account.json.
 
-Then in your Python file: change 
+Then in your Python file change: 
 
 SERVICE_ACCOUNT_FILE = "/etc/secrets/service_account.json"
 
