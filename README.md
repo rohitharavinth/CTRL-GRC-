@@ -1,8 +1,8 @@
-**CTRL+GRC – Cybersecurity GRC Scoring and Reporting Tool
+CTRL+GRC – Cybersecurity GRC Scoring and Reporting Tool
 
 CTRL+GRC is a real-time Cybersecurity Governance, Risk, and Compliance (GRC) assessment system powered by Google Forms + Sheets, Python scoring logic, automated PDF report generation, and email delivery. Built to help startup and msmse organizations quickly evaluate their security posture.
 
-Features:**
+Features:
 
 ⏱️ Real-time monitoring of Google Form responses
 
