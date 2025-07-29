@@ -165,10 +165,12 @@ Recommendations with priority (Critical, High, Medium, Low)
 9. Troubleshooting
 
 ❌ 404 on /generate: Check app.py for correct route method and deployment.
+
 ❌ Invalid JWT: Make sure the service account JSON is valid and has Sheet access.
+
 ❌ Email not sending: Ensure app password is valid, and sender email is not blocked.
 
-10. Contact 
+
 
 Built with ❤️ and passion for cybersecurity 
 by @rohitharavinth
